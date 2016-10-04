@@ -5,9 +5,23 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\sTestDot</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\bgTemp</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\backgrounder.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\ctSplash</object>
+    <object>objects\oTestDot</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rSplash</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
