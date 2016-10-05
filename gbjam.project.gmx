@@ -26,6 +26,7 @@
       <object>objects\ctGame</object>
     </objects>
     <object>objects\oTestDot</object>
+    <object>objects\oShot</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rSplash</room>
