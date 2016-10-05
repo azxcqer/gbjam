@@ -15,6 +15,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\backgrounder.gml</script>
+    <script>scripts\warp.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\ctSplash</object>
