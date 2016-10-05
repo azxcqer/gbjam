@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sTestDot</sprite>
+    <sprite>sprites\sprite1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgTemp</background>
@@ -18,6 +19,8 @@
   <objects name="objects">
     <object>objects\ctSplash</object>
     <object>objects\oTestDot</object>
+    <object>objects\oPlayer</object>
+    <object>objects\oLane</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rSplash</room>

@@ -26,6 +26,30 @@
           <argument>
             <kind>1</kind>
             <string>backgrounder()
+
+var i;
+var j;
+var currentLane;
+var lanes;
+
+global.lanes = ds_list_create();
+for (i = 0; i &lt; instance_number(oLane); i += 1)
+{
+    var instance = instance_find(oLane,i);
+    j = 0;
+    if i &gt; 0
+    {
+        while global.lanes[| j].y &lt; instance.y &amp;&amp; ds_list_size(global.lanes) &gt; j
+        {
+            j = j + 1;
+        }
+    }
+    ds_list_insert(global.lanes,j,instance);
+}
+   
+global.currentLane = 0;
+   
+   
 </string>
           </argument>
         </arguments>
