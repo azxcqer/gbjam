@@ -18,13 +18,19 @@
     <script>scripts\warp.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\ctSplash</object>
     <object>objects\oTestDot</object>
     <object>objects\oPlayer</object>
     <object>objects\oLane</object>
+    <objects name="controllers">
+      <object>objects\ctMenu</object>
+      <object>objects\ctSplash</object>
+      <object>objects\ctGame</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rSplash</room>
+    <room>rooms\rMenu</room>
+    <room>rooms\rGame</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

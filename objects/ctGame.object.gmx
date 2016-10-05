@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="2">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,8 +25,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///go to menu
-warp(rMenu)
+            <string>backgrounder()
+
+var i;
+var j;
+var currentLane;
+var lanes;
+
+global.lanes = ds_list_create();
+for (i = 0; i &lt; instance_number(oLane); i += 1)
+{
+    var instance = instance_find(oLane,i);
+    j = 0;
+    if i &gt; 0
+    {
+        while global.lanes[| j].y &lt; instance.y &amp;&amp; ds_list_size(global.lanes) &gt; j
+        {
+            j = j + 1;
+        }
+    }
+    ds_list_insert(global.lanes,j,instance);
+}
+   
+global.currentLane = 0;
+   
+   
 </string>
           </argument>
         </arguments>
