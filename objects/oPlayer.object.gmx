@@ -32,7 +32,7 @@ y = global.lanes[| global.currentLane].y
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="40">
+    <event eventtype="9" enumb="40">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -57,7 +57,7 @@ y = global.lanes[| global.currentLane].y
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="38">
+    <event eventtype="9" enumb="38">
       <action>
         <libid>1</libid>
         <id>603</id>
