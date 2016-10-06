@@ -34,6 +34,35 @@
   <objects name="objects">
     <object>objects\oPlayer</object>
     <object>objects\oLane</object>
+    <objects name="Classes">
+      <objects name="Coliders">
+        <object>objects\cColider</object>
+        <objects name="Destructable">
+          <object>objects\cDestructable</object>
+          <objects name="Movers">
+            <object>objects\cMovers</object>
+            <object>objects\cBullet</object>
+            <object>objects\cPowerup</object>
+            <objects name="Enemies">
+              <object>objects\cEnemy</object>
+              <objects name="Walkers">
+                <object>objects\cWalkers</object>
+                <object>objects\cBlocker</object>
+                <object>objects\cJumper</object>
+                <objects name="Swimmers">
+                  <object>objects\cSwimmer</object>
+                  <object>objects\cShooter</object>
+                  <objects name="Changers">
+                    <object>objects\cChanger</object>
+                    <object>objects\cArrombaders</object>
+                  </objects>
+                </objects>
+              </objects>
+            </objects>
+          </objects>
+        </objects>
+      </objects>
+    </objects>
     <objects name="Controllers">
       <object>objects\ctMenu</object>
       <object>objects\ctSplash</object>
