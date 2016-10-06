@@ -57,7 +57,7 @@
     <instance objName="oTestDot" x="158" y="142" name="inst_D5312718" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTestDot" x="158" y="0" name="inst_F2830B50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLane" x="80" y="0" name="inst_A60845CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer" x="0" y="24" name="inst_01CBF3C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer" x="80" y="4" name="inst_01CBF3C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLane" x="80" y="112" name="inst_23020C2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLane" x="80" y="40" name="inst_B4D6380E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLane" x="80" y="80" name="inst_84696436" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
