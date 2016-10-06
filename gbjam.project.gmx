@@ -13,7 +13,7 @@
       <sprite>sprites\sFish</sprite>
       <sprite>sprites\sCrab</sprite>
     </sprites>
-    <sprite>sprites\sShoot_dark</sprite>
+    <sprite>sprites\sBullet_dark</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgTemp</background>
