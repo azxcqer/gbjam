@@ -6,15 +6,19 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sTestDot</sprite>
-    <sprite>sprites\sLane</sprite>
-    <sprite>sprites\sPlayer</sprite>
     <sprites name="enemies">
       <sprite>sprites\sFish</sprite>
       <sprite>sprites\sCrab</sprite>
     </sprites>
-    <sprite>sprites\sBullet_dark</sprite>
-    <sprite>sprites\sBullet_clear</sprite>
+    <sprites name="Bullets">
+      <sprite>sprites\sBullet_dark</sprite>
+      <sprite>sprites\sBullet_clear</sprite>
+    </sprites>
+    <sprite>sprites\sPlayer</sprite>
+    <sprites name="Other">
+      <sprite>sprites\sTestDot</sprite>
+      <sprite>sprites\sLane</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bgTemp</background>
