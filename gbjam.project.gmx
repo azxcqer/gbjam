@@ -7,7 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sTestDot</sprite>
-    <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\sLane</sprite>
     <sprite>sprites\sPlayer</sprite>
     <sprites name="enemies">
       <sprite>sprites\sFish</sprite>
