@@ -1,8 +1,0 @@
-if ds_list_empty(lane_list)
-{
-    with(oLane)
-{
-    ds_list_add(lane_list, oLane);
-}
-}
-else lane_list = ds_list_create();

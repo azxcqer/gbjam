@@ -16,6 +16,9 @@
   <scripts name="scripts">
     <script>scripts\backgrounder.gml</script>
     <script>scripts\warp.gml</script>
+    <script>scripts\playerEnterState.gml</script>
+    <script>scripts\playerExitState.gml</script>
+    <script>scripts\playerUpdateState.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oPlayer</object>
