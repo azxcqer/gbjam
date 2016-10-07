@@ -21,8 +21,8 @@
     <sprites name="Other">
       <sprite>sprites\sTestDot</sprite>
       <sprite>sprites\sLane</sprite>
+      <sprite>sprites\sFloor</sprite>
     </sprites>
-    <sprite>sprites\sFloor</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgTemp</background>
@@ -67,20 +67,19 @@
         </objects>
       </objects>
     </objects>
-    <objects name="Coliders">
-      <object>objects\oPlayer</object>
-    </objects>
     <objects name="Controllers">
       <object>objects\ctMenu</object>
       <object>objects\ctSplash</object>
       <object>objects\ctGame</object>
     </objects>
+    <object>objects\oPlayer</object>
+    <object>objects\oCastle</object>
     <object>objects\oBullet</object>
     <objects name="Engine and Others">
       <object>objects\oLane</object>
       <object>objects\oTestDot</object>
+      <object>objects\oFloor</object>
     </objects>
-    <object>objects\oFloor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rSplash</room>
