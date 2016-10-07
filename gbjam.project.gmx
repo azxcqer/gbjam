@@ -38,7 +38,6 @@
     <script>scripts\playerExitState.gml</script>
     <script>scripts\playerUpdateState.gml</script>
     <script>scripts\shoot.gml</script>
-    <script>scripts\blink.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Classes">
