@@ -13,6 +13,8 @@
       <sprite>sprites\sCrab</sprite>
       <sprite>sprites\sJelly</sprite>
       <sprite>sprites\sRay</sprite>
+      <sprite>sprites\sShrimp</sprite>
+      <sprite>sprites\sMantis</sprite>
     </sprites>
     <sprites name="Bullets">
       <sprite>sprites\sBullet_dark</sprite>
