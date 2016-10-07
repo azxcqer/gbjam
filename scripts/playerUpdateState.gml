@@ -37,7 +37,7 @@ switch global.playerState {
         }      
         break; 
     case States.shooting:
-        action_create_object_motion(oBullet,x,y,0,direction);
+        shoot()
         
         playerEnterState(States.idle);
         break;
