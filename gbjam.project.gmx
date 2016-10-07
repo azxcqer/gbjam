@@ -19,6 +19,7 @@
       <sprite>sprites\sTestDot</sprite>
       <sprite>sprites\sLane</sprite>
     </sprites>
+    <sprite>sprites\sFloor</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgTemp</background>
@@ -75,6 +76,7 @@
       <object>objects\oLane</object>
       <object>objects\oTestDot</object>
     </objects>
+    <object>objects\oFloor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rSplash</room>
