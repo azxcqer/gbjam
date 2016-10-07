@@ -2,8 +2,16 @@
 ///shoot()
 shootX = x + shootOffsetX
 shootY = y + shootOffsetY
+/* welp, this was storing the object class and not the object id, so it was messing things up
 var a = action_create_object_motion(shootBullet,shootX,shootY,shootSpeed,direction);
-a.bulletPower = shootPower
+*/
+
+var a = instance_create(shootX, shootY, shootBullet);
+a.pow = shootPower
+a.life = shootPower
+a.direction = direction
+a.speed = shootSpeed
+
 
 #define shootInit
 //shootInit()
@@ -26,7 +34,3 @@ shootOffsetY = 0
 //1 is right. -1 is left
 shootDir = 1
 shootBullet = oBullet
-
-#define bulletInit
-//bulletInit()
-bulletPower = 0
