@@ -38,6 +38,7 @@
     <script>scripts\playerExitState.gml</script>
     <script>scripts\playerUpdateState.gml</script>
     <script>scripts\shoot.gml</script>
+    <script>scripts\blink.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Classes">
@@ -81,6 +82,7 @@
       <object>objects\oCrab</object>
       <object>objects\oBullet_bad</object>
     </objects>
+    <object>objects\oSpawner</object>
     <objects name="Engine and Others">
       <object>objects\oLane</object>
       <object>objects\oTestDot</object>

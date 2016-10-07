@@ -52,6 +52,7 @@ event_inherited()
 pow = 1
 //because health is global and reserved
 life = 1
+
 </string>
           </argument>
         </arguments>
