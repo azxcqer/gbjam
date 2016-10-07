@@ -71,7 +71,7 @@
       <object>objects\ctSplash</object>
       <object>objects\ctGame</object>
     </objects>
-    <object>objects\oShot</object>
+    <object>objects\oBullet</object>
     <objects name="Engine and Others">
       <object>objects\oLane</object>
       <object>objects\oTestDot</object>
