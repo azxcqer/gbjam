@@ -1,6 +1,7 @@
 switch global.playerState {
     
     case States.idle:
+        var movingOffset = 2;
         if keyboard_check_pressed(vk_right)
         {
             image_xscale = 1;
@@ -19,7 +20,7 @@ switch global.playerState {
             {
                 global.currentLane = global.currentLane - 1;
                 x = global.lanes[| global.currentLane].x;
-                y = global.lanes[| global.currentLane].y + sprite_height/2;
+                y = global.lanes[| global.currentLane].y + (sprite_height/2) - movingOffset;
             }
                 
         }  
@@ -29,7 +30,7 @@ switch global.playerState {
             {
                 global.currentLane = global.currentLane + 1;
                 x = global.lanes[| global.currentLane].x;
-                y = global.lanes[| global.currentLane].y + sprite_height/2;
+                y = global.lanes[| global.currentLane].y + sprite_height/2 - movingOffset;
             }
         }      
         break; 
