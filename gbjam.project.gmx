@@ -7,9 +7,12 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sPlayer</sprite>
+    <sprite>sprites\sCastle</sprite>
     <sprites name="Enemies">
       <sprite>sprites\sFish</sprite>
       <sprite>sprites\sCrab</sprite>
+      <sprite>sprites\sJelly</sprite>
+      <sprite>sprites\sRay</sprite>
     </sprites>
     <sprites name="Bullets">
       <sprite>sprites\sBullet_dark</sprite>
