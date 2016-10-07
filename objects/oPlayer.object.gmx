@@ -57,7 +57,35 @@ global.playerState = States.idle;
             <string>///other vars
 shootInit()
 shootOffsetX = 2
+canShoot = true
+shotsPerSecond = 3
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>canShoot</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
           </argument>
         </arguments>
       </action>

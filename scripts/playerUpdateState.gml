@@ -2,11 +2,16 @@ switch global.playerState {
     
     case States.idle:
         var movingOffset = 2;
-        if keyboard_check_pressed(vk_right)
+        if keyboard_check(vk_right)
         {
-            image_xscale = 1;
-            direction = 0;
-            playerEnterState(States.shooting);
+            if canShoot
+            {
+                canShoot = false;
+                alarm[0] = room_speed / shotsPerSecond;
+                image_xscale = 1;
+                direction = 0;
+                playerEnterState(States.shooting);
+            }
         }
         if keyboard_check_pressed(vk_left)
         {
