@@ -10,9 +10,11 @@ switch global.playerState {
         }
         if keyboard_check_pressed(vk_left)
         {
+            /*
             image_xscale = -1;
             direction = 180;
             playerEnterState(States.shooting);
+            */
         }
         if keyboard_check_pressed(vk_up)
         {
