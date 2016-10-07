@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>backgrounder()
 background_index[0] = bgSeaFloor
+room_speed = 60
 
 var i;
 var j;
