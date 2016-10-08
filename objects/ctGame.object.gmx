@@ -33,9 +33,21 @@ var i;
 var j;
 var currentLane;
 var lanes;
+var spawners
 
 global.lanes = ds_list_create();
-for (i = 0; i &lt; instance_number(oLane); i += 1)
+SortListOfObjects(global.lanes, oLane)
+
+global.spawners = ds_list_create();
+SortListOfObjects(global.spawners, oSpawner)
+
+for (i = 0; i &lt; ds_list_size(global.spawners); i += 1)
+{
+    var instance = instance_find(oSpawner,i);
+    instance.secondsToSpawn = 1
+    global.spawners[| i] = instance
+}
+/*for (i = 0; i &lt; instance_number(oLane); i += 1)
 {
     var instance = instance_find(oLane,i);
     j = 0;
@@ -48,7 +60,7 @@ for (i = 0; i &lt; instance_number(oLane); i += 1)
     }
     ds_list_insert(global.lanes,j,instance);
 }
-   
+  */ 
 global.currentLane = 0;
    
    

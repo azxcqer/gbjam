@@ -49,6 +49,7 @@ event_inherited()
             <kind>1</kind>
             <string>///vars
 aligment = 1
+canBeKnocked = true
 </string>
           </argument>
         </arguments>

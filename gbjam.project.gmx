@@ -30,7 +30,9 @@
     <background>background\bgTemp</background>
     <background>background\bgSeaFloor</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\backgrounder.gml</script>
     <script>scripts\warp.gml</script>
@@ -38,6 +40,7 @@
     <script>scripts\playerExitState.gml</script>
     <script>scripts\playerUpdateState.gml</script>
     <script>scripts\shoot.gml</script>
+    <script>scripts\SortListOfObjects.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Classes">
@@ -79,6 +82,7 @@
     <object>objects\oCastle</object>
     <objects name="Enemies">
       <object>objects\oCrab</object>
+      <object>objects\oFish</object>
       <object>objects\oBullet_bad</object>
     </objects>
     <object>objects\oSpawner</object>
