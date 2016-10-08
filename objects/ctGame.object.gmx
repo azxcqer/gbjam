@@ -25,16 +25,39 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>backgrounder()
-background_index[0] = bgSeaFloor
-room_speed = 60
-
+            <string>enum GameDifficulty {facerrimo, facil, normal, dificil, hell}
+// DECLARE AND INIT VARIABLES
 var i;
 var j;
 var currentLane;
 var lanes;
 var spawners
+var numberOfSpawners
+var difficulty = GameDifficulty.normal
+global.currentLane = 0;
+room_speed = 60
 
+backgrounder()
+background_index[0] = bgSeaFloor
+
+switch difficulty
+{
+    case GameDifficulty.facerrimo:
+        numberOfSpawners = 3
+        break
+    case GameDifficulty.facil:
+        numberOfSpawners = 3
+        break
+    case GameDifficulty.normal:
+        numberOfSpawners = 5
+        break
+    case GameDifficulty.dificil:
+        numberOfSpawners = 6
+        break
+    case GameDifficulty.hell:
+        numberOfSpawners = 6
+        break
+}
 global.lanes = ds_list_create();
 SortListOfObjects(global.lanes, oLane)
 
@@ -43,9 +66,10 @@ SortListOfObjects(global.spawners, oSpawner)
 
 for (i = 0; i &lt; ds_list_size(global.spawners); i += 1)
 {
-    var instance = instance_find(oSpawner,i);
-    instance.secondsToSpawn = 1
-    global.spawners[| i] = instance
+    if i &gt;= numberOfSpawners
+    {
+        instance_deactivate_object(global.spawners[| i]);
+    }
 }
 /*for (i = 0; i &lt; instance_number(oLane); i += 1)
 {
@@ -61,7 +85,7 @@ for (i = 0; i &lt; ds_list_size(global.spawners); i += 1)
     ds_list_insert(global.lanes,j,instance);
 }
   */ 
-global.currentLane = 0;
+
    
    
 </string>
