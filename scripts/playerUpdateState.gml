@@ -26,8 +26,8 @@ switch global.playerState {
             if global.currentLane > 0
             {
                 global.currentLane = global.currentLane - 1;
-                x = global.lanes[| global.currentLane].x + (sprite_height/2);
-                y = global.lanes[| global.currentLane].y + (sprite_height/2) - movingOffset;
+                x = global.lanes[| global.currentLane].x + (global.lanes[| global.currentLane].sprite_width/2);
+                y = global.lanes[| global.currentLane].y + (global.lanes[| global.currentLane].sprite_height/2) - movingOffset;
             }
                 
         }  
@@ -36,8 +36,8 @@ switch global.playerState {
             if global.currentLane < (ds_list_size(global.lanes) - 1)
             {
                 global.currentLane = global.currentLane + 1;
-                x = global.lanes[| global.currentLane].x + (sprite_height/2);
-                y = global.lanes[| global.currentLane].y + sprite_height/2 - movingOffset;
+                x = global.lanes[| global.currentLane].x + (global.lanes[| global.currentLane].sprite_width/2);
+                y = global.lanes[| global.currentLane].y + (global.lanes[| global.currentLane].sprite_height/2) - movingOffset;
             }
         }      
         break; 
