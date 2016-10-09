@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enum GameDifficulty {facerrimo, facil, normal, dificil, hell}
-// DECLARE AND INIT VARIABLES
+            <string>/// DECLARE AND INIT VARIABLES
+
+//local vars
 var i;
 var j;
 var currentLane;

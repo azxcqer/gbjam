@@ -30,6 +30,8 @@
 draw_set_font(ftGB)
 //set default draw color
 draw_set_color(color4)
+//dificulty inicialization
+enum GameDifficulty {facerrimo, facil, normal, dificil, hell}
 </string>
           </argument>
         </arguments>
