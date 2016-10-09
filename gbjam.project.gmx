@@ -104,6 +104,12 @@
     <room>rooms\rMenu</room>
     <room>rooms\rGame</room>
   </rooms>
+  <constants number="4">
+    <constant name="color1">$9bbc0f</constant>
+    <constant name="color2">$8bac0f</constant>
+    <constant name="color3">$306230</constant>
+    <constant name="color4">$0f380f</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
