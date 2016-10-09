@@ -50,6 +50,8 @@ event_inherited()
             <string>/// vars
 //because health is global and reserved
 life = 5
+//to not knockback things
+pow = 999
 </string>
           </argument>
         </arguments>

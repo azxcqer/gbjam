@@ -49,11 +49,12 @@ event_inherited()
             <kind>1</kind>
             <string>/// vars
 //the damage it inflicts on hit
-pow = 1
+defPow = 1
+pow = defPow
 //because health is global and reserved
-life = 1
+defLife = 1
+life = defLife
 canBeKnocked = false
-
 </string>
           </argument>
         </arguments>

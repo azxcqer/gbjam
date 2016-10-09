@@ -50,6 +50,8 @@ event_inherited()
             <string>///vars
 //default walk speed for speed scaling
 defSpeed = 1
+//current speed, scalled
+mySpeed = defSpeed
 direction = 180
 
 //var to run some code once when the instance is created
@@ -83,10 +85,7 @@ firstStep = true
             <string>///vrum vrum
 if firstStep {
     firstStep = false
-    
-    if speed = 0 {
-        speed = defSpeed
-    }
+    speed = mySpeed
 }
 </string>
           </argument>

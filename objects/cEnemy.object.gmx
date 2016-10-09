@@ -53,7 +53,9 @@ canBeKnocked = true
 //when it dies, does it count?
 scoreable = true
 //how much points is it worth?
-value = 50
+defValue = 50
+value = defValue
+defSpeed = 0.5
 </string>
           </argument>
         </arguments>

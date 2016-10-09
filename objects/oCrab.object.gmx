@@ -48,7 +48,8 @@ event_inherited()
           <argument>
             <kind>1</kind>
             <string>///vars
-life = 2
+life = defLife * 2
+mySpeed = defSpeed / 2
 </string>
           </argument>
         </arguments>
