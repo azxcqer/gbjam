@@ -69,6 +69,7 @@ global.enemiesObjects[1] = oFish</code>
     <instance objName="oSpawner" x="152" y="73" name="inst_920C38F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpawner" x="152" y="57" name="inst_0595F6E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpawner" x="152" y="40" name="inst_F5E058FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock" x="16" y="40" name="inst_4D50981D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
