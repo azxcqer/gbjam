@@ -129,7 +129,7 @@ if keyboard_check_pressed(ord("R")){
 }
 
 if global.gamestate =  GameState.ended {
-    if keyboard_check_pressed(vk_anykey){
+    if keyboard_check_pressed(vk_space){
         room_restart()
     }
 }
@@ -274,11 +274,11 @@ draw_text(guiWidth, 0, "HI " + string(highscore) + "#" + string(score))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//other drawings
+            <string>///other drawings
 switch global.gamestate{
     case GameState.ended:
         setAligns(1,1)
-        draw_text(guiWidth/2, guiHeight/2, "GAME OVER!#Press any key to restart")
+        draw_text(guiWidth/2, guiHeight/2, "GAME OVER!#Press SPACE to restart")
     break
     
     
