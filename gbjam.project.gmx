@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -42,6 +43,9 @@
     <script>scripts\shoot.gml</script>
     <script>scripts\SortListOfObjects.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\ftGB</font>
+  </fonts>
   <objects name="objects">
     <objects name="Classes">
       <objects name="Coliders">
