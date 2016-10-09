@@ -42,6 +42,7 @@
     <script>scripts\playerUpdateState.gml</script>
     <script>scripts\shoot.gml</script>
     <script>scripts\SortListOfObjects.gml</script>
+    <script>scripts\shadowText.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ftGB</font>
