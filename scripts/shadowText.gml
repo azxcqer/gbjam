@@ -30,7 +30,7 @@ var textX = argument0;
 var textY = argument1;
 var text = argument2;
 
-shadowText(textX, textY, text, c_white, c_black, 1)
+shadowText(textX, textY, text, color3, color4, 1)
 
 
 #define shadowTextColored
