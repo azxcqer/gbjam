@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///variables
+//set default font
 draw_set_font(ftGB)
+//set default draw color
+draw_set_color(color4)
 </string>
           </argument>
         </arguments>
