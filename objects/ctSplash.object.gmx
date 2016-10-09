@@ -32,6 +32,10 @@ draw_set_font(ftGB)
 draw_set_color(color3)
 //dificulty inicialization
 enum GameDifficulty {facerrimo, facil, normal, dificil, hell}
+enum GameState {menu, playing, ended, paused };
+
+//globals
+global.gamestate = GameState.menu
 </string>
           </argument>
         </arguments>

@@ -79,7 +79,9 @@ value = 50
             <string>//scoring
 
 if scoreable {
-    score += value
+    if global.gamestate = GameState.playing{
+        score += value
+    }
 }
 </string>
           </argument>

@@ -42,6 +42,7 @@ room_speed = 60
 global.currentLane = 0;
 //score reset
 score = 0
+global.gamestate = GameState.playing
 
 
 backgrounder()
@@ -125,6 +126,37 @@ if keyboard_check_pressed(vk_escape){
 
 if keyboard_check_pressed(ord("R")){
     room_restart()
+}
+
+if global.gamestate =  GameState.ended {
+    if keyboard_check_pressed(vk_anykey){
+        room_restart()
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///ending game
+
+if !instance_exists(oCastle){
+    global.gamestate = GameState.ended
 }
 </string>
           </argument>
@@ -222,9 +254,35 @@ guiSize()
 setAligns(2,0)
 var a = 0
 draw_text(guiWidth, 0, "HI " + string(highscore) + "#" + string(score))
-
-
-//shadow
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//other drawings
+switch global.gamestate{
+    case GameState.ended:
+        setAligns(1,1)
+        draw_text(guiWidth/2, guiHeight/2, "GAME OVER!#Press any key to restart")
+    break
+    
+    
+}
 </string>
           </argument>
         </arguments>
