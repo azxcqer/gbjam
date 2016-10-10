@@ -3,6 +3,9 @@ switch global.playerState {
     case States.idle:
         var movingOffset = 2;
         if keyboard_check(vk_right)
+        || keyboard_check(ord("D"))
+        || keyboard_check(ord("Z"))
+        || keyboard_check(vk_space)
         {
             if canShoot
             {
@@ -22,6 +25,7 @@ switch global.playerState {
             */
         }
         if keyboard_check_pressed(vk_up)
+        || keyboard_check_pressed(ord("W"))
         {
             if global.currentLane > 0
             {
@@ -32,6 +36,7 @@ switch global.playerState {
                 
         }  
         if keyboard_check_pressed(vk_down)
+        || keyboard_check_pressed(ord("S"))
         {
             if global.currentLane < (ds_list_size(global.lanes) - 1)
             {
