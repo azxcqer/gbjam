@@ -55,6 +55,8 @@ pow = defPow
 defLife = 1
 life = defLife
 canBeKnocked = false
+soundDeath = sdHitEnemy
+soundHit = sdHitEnemy
 </string>
           </argument>
         </arguments>
@@ -81,6 +83,7 @@ canBeKnocked = false
 
 if life &lt;= 0{
     //play some fancy animation?
+    audio_play_sound(soundDeath, 5, false)
     instance_destroy()
 }
 </string>
@@ -108,10 +111,7 @@ if life &lt;= 0{
             <string>///damage
 if enemyCheck(other.id){
     life -= other.pow
-    if canBeKnocked
-    {
-        x += 8
-    }
+    audio_play_sound(soundHit, 5, false)
 }
 </string>
           </argument>

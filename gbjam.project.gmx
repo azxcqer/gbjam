@@ -5,7 +5,13 @@
   </Configs>
   <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sdShot</sound>
+    <sound>sound\sdShotEnemy</sound>
+    <sound>sound\sdHitCastle</sound>
+    <sound>sound\sdHitEnemy</sound>
+    <sound>sound\sdExplosion</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sPlayer</sprite>
     <sprite>sprites\sCastle</sprite>

@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///variables
 randomize()
+audio_set_master_gain(0,0.25)
 //set default font
 draw_set_font(ftGB)
 //set default draw color

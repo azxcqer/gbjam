@@ -52,6 +52,8 @@ event_inherited()
 life = 5
 //to not knockback things
 pow = 999
+soundHit = sdHitCastle
+soundDeath = sdExplosion
 </string>
           </argument>
         </arguments>
