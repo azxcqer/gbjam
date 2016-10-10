@@ -106,7 +106,7 @@ if life &lt;= 0{
           <argument>
             <kind>1</kind>
             <string>///damage
-if aligment != other.aligment{
+if enemyCheck(other.id){
     life -= other.pow
     if canBeKnocked
     {
