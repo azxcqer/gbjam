@@ -11,6 +11,7 @@
     <sound>sound\sdHitCastle</sound>
     <sound>sound\sdHitEnemy</sound>
     <sound>sound\sdExplosion</sound>
+    <sound>sound\sdTcheco</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sPlayer</sprite>
@@ -35,6 +36,7 @@
     <sprite>sprites\sBlock</sprite>
     <sprite>sprites\sHeart</sprite>
     <sprite>sprites\sSkull</sprite>
+    <sprite>sprites\sToniolo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgTemp</background>
