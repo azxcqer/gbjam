@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///variables
+randomize()
 //set default font
 draw_set_font(ftGB)
 //set default draw color
