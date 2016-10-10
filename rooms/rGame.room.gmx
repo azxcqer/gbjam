@@ -63,12 +63,12 @@ global.enemiesObjects[1] = oFish</code>
     <instance objName="oLane" x="16" y="57" name="inst_0FC79FEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLane" x="16" y="41" name="inst_24D74331" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oFloor" x="0" y="128" name="inst_2ADC0AA0" locked="0" code="" scaleX="20" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="oSpawner" x="152" y="120" name="inst_EC08F6E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSpawner" x="152" y="105" name="inst_DE70906C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSpawner" x="152" y="89" name="inst_4B6B425B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSpawner" x="152" y="73" name="inst_920C38F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSpawner" x="152" y="57" name="inst_0595F6E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSpawner" x="152" y="40" name="inst_F5E058FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpawner" x="160" y="120" name="inst_EC08F6E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpawner" x="160" y="105" name="inst_DE70906C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpawner" x="160" y="89" name="inst_4B6B425B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpawner" x="160" y="73" name="inst_920C38F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpawner" x="160" y="57" name="inst_0595F6E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpawner" x="160" y="40" name="inst_F5E058FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
