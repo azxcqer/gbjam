@@ -2,11 +2,13 @@ switch global.playerState {
     
     case States.idle:
         var movingOffset = 2;
+        /*
         if keyboard_check(vk_right)
         || keyboard_check(ord("D"))
         || keyboard_check(ord("Z"))
         || keyboard_check(vk_space)
         {
+        */
             if canShoot
             {
                 canShoot = false;
@@ -15,7 +17,7 @@ switch global.playerState {
                 direction = 0;
                 playerEnterState(States.shooting);
             }
-        }
+        //}
         if keyboard_check_pressed(vk_left)
         {
             /*
