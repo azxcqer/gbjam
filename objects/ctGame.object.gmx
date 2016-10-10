@@ -46,6 +46,10 @@ global.gamestate = GameState.playing
 global.kills = 0
 
 
+//enemy array
+global.enemiesObjects[0] = oCrab
+global.enemiesObjects[1] = oFish
+
 backgrounder()
 background_index[0] = bgSeaFloor
 
