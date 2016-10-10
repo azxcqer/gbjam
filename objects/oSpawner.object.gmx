@@ -26,41 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>canSpawn = false
-secondsToSpawn = choose(2.5, 3, 3.5, 4, 4.5, 5)
-alarm[0] = room_speed * secondsToSpawn 
+secondsToSpawn = choose(2.5, 3, 3.5, 4, 4.5, 5, 6)
+spawnTimer = room_speed * secondsToSpawn 
 maxDifficultyToActivate = 5
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>canSpawn</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>true</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="1">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -77,10 +51,16 @@ maxDifficultyToActivate = 5
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if canSpawn
+            <string>spawnTimer --
+
+if spawnTimer &lt;= 0 {
+    canSpawn = true
+}
+
+if canSpawn
 {
     canSpawn = false
-    alarm[0] = room_speed * secondsToSpawn 
+    spawnTimer = room_speed * secondsToSpawn 
     enemySpawned = global.enemiesObjects[random(array_length_1d(global.enemiesObjects))]
     var a = instance_create(x, y, enemySpawned);
 }
