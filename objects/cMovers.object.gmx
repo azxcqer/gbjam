@@ -85,7 +85,9 @@ firstStep = true
             <string>///vrum vrum
 if firstStep {
     firstStep = false
-    speed = mySpeed
+    if speed = 0{
+        speed = mySpeed
+    }
 }
 </string>
           </argument>
