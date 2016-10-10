@@ -49,6 +49,7 @@
     <script>scripts\setAligns.gml</script>
     <script>scripts\guiSize.gml</script>
     <script>scripts\scoreLoad.gml</script>
+    <script>scripts\enemyCheck.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ftGB</font>
