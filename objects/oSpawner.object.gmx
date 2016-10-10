@@ -64,7 +64,7 @@ if canSpawn
 {
     canSpawn = false
     spawnTimer = room_speed * secondsToSpawn 
-    var enemySpawned = global.enemiesObjects[irandom(array_length_1d(global.enemiesObjects))],
+    var enemySpawned = global.enemiesObjects[irandom((array_length_1d(global.enemiesObjects)) - 1)],
         a = instance_create(x, y, enemySpawned);
 }
 </string>
