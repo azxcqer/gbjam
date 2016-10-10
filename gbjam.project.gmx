@@ -28,6 +28,7 @@
     </sprites>
     <sprite>sprites\sBlock</sprite>
     <sprite>sprites\sHeart</sprite>
+    <sprite>sprites\sSkull</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgTemp</background>

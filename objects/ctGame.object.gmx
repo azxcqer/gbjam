@@ -43,6 +43,7 @@ global.currentLane = 0;
 //score reset
 score = 0
 global.gamestate = GameState.playing
+global.kills = 0
 
 
 backgrounder()
@@ -286,14 +287,14 @@ switch global.gamestate{
 }
 
 ///castle health draw
+draw_set_halign(1)
+var scaling = 4
 if instance_exists(oCastle){
-    draw_set_halign(1)
     var i,
         castleHP = oCastle.life,
         hearts = castleHP,
         extra = false,
         spacing = sprite_get_width(sHeart),
-        scaling = 4
         ;
     if hearts &gt; 6 {
         hearts = 6
@@ -306,6 +307,11 @@ if instance_exists(oCastle){
         draw_text((1 + hearts) * scaling * spacing, 0, "x" + string(castleHP) )
     }
 }
+/*
+var kills = string(global.kills)
+draw_sprite_ext(sSkull, 0, 0, 8 * scaling, scaling, scaling, 0, c_white, 1)
+draw_text(2 * scaling * 8 + 8, 8 * scaling + 4 , "x" + kills)
+*/
 </string>
           </argument>
         </arguments>

@@ -84,6 +84,7 @@ mySpeed = defSpeed
 if scoreable {
     if global.gamestate = GameState.playing{
         score += value
+        global.kills++
     }
 }
 </string>
