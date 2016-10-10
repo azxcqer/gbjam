@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///variables
 randomize()
-audio_set_master_gain(0,0.25)
+audio_master_gain(0.25)
 //set default font
 draw_set_font(ftGB)
 //set default draw color
@@ -38,6 +38,7 @@ enum GameState {menu, playing, ended, paused };
 
 //globals
 global.gamestate = GameState.menu
+global.sound = true
 </string>
           </argument>
         </arguments>
