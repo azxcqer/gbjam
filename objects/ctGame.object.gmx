@@ -157,6 +157,7 @@ if global.gamestate =  GameState.ended {
 
 if !instance_exists(oCastle){
     global.gamestate = GameState.ended
+    playerEnterState(States.dead);
 }
 </string>
           </argument>

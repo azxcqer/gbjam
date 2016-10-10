@@ -50,7 +50,7 @@ switch global.playerState {
         
         break;
     case States.dead:
-        
+        image_yscale = -1
         break;
 
 }
