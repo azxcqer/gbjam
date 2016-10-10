@@ -12,6 +12,7 @@
     <sound>sound\sdHitEnemy</sound>
     <sound>sound\sdExplosion</sound>
     <sound>sound\sdTcheco</sound>
+    <sound>sound\sdTcheco2</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sPlayer</sprite>
@@ -114,6 +115,7 @@
       <object>objects\oFloor</object>
     </objects>
     <object>objects\oBlock</object>
+    <object>objects\oToniolo</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rSplash</room>

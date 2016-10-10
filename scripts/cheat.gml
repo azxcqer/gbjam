@@ -3,55 +3,31 @@
 if cheatTimer > 0 {
     cheatTimer --
     cheating = true
-    curHat = oHat.sprite_index
+    
     //check the cheats
     while cheating {
-        //debug cheats
-        cheatDebug()
-
-        if cheatCheck("hat"){
-            randomHat()
-        }
-                
-        //create a whale        
-        if whalesAvail > 0{
-            if cheatCheck("whale"){
-                var w =  randCreate(oWhale)
-                with w {
-                    depth = random_range(5,10)
-                }
-                whalesAvail--
-                whalesTotal++
-                whaleTipReset()
+        
+        if cheatCheck("babababy"){
+            
+            cheatMute = true
+            audio_play_sound(sdTcheco, 10, false)
+            if instance_exists(oToniolo){
+                oToniolo.visible = true
             }
         }
         
-        cheatBgs()
-        //cheats by aprox use I guess
-        //hats
-        cheatToon()
-        cheatAnime()
-        cheatGame() 
-        cheatHats()
-
-        //floaters
-        cheatFloaters()
-        
-        //cleaner
-        if cheatCheck("clean")
-        or cheatCheck("clear"){
-            with oFloaty {
-                instance_destroy()
+        if cheatCheck("cu"){
+            //audio_play_sound(tchecoSounds[irandom((array_length_1d(tchecoSounds)) - 1)], 10, false)
+            cheatMute = true
+            audio_play_sound(sdTcheco, 10, false)
+            if instance_exists(oToniolo){
+                oToniolo.visible = true
             }
-            global.hat = false
-            background_hspeed[0] = 6
+        
         }
-        //repeat
-        else if cheatCheck("repeat"){
-            cheatRepeat()
-        }
+        
         //breaking the while loop
-        cheating = false
+        cheating = false        
     }
 }
 else {
@@ -71,7 +47,9 @@ curHat = 0
 cheating = true
 //to play the cheat sound or not
 cheatMute = false
-
+//sound array
+tchecoSounds[0] = sdTcheco
+tchecoSounds[1] = sdTcheco2
 
 #define cheatImput
 var a = keyboard_string,
@@ -105,10 +83,9 @@ if b >= 1 {
     cheatString = ""
     keyboard_string = ""
     if !cheatMute {
-        audio_play_sound(sdPop,5,false)
+        audio_play_sound(sdExplosion,5,false)
     }
     cheating = false
-    scoring(10 * whalesTotal)
     cheatMute = false
     return true
 }
