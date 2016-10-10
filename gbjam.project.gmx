@@ -39,6 +39,7 @@
   <backgrounds name="background">
     <background>background\bgTemp</background>
     <background>background\bgSeaFloor</background>
+    <background>background\bgTitle</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
