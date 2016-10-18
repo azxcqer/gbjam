@@ -98,7 +98,7 @@
     <objects name="Controllers">
       <object>objects\ctMenu</object>
       <object>objects\ctSplash</object>
-      <object>objects\ctGame</object>
+      <object>objects\ctMain</object>
     </objects>
     <object>objects\oPlayer</object>
     <object>objects\oBullet</object>
