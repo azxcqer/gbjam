@@ -48,17 +48,21 @@
     <path>paths\path0</path>
   </paths>
   <scripts name="scripts">
-    <script>scripts\backgrounder.gml</script>
-    <script>scripts\warp.gml</script>
-    <script>scripts\playerEnterState.gml</script>
-    <script>scripts\playerExitState.gml</script>
-    <script>scripts\playerUpdateState.gml</script>
+    <scripts name="Player State Machine">
+      <script>scripts\playerEnterState.gml</script>
+      <script>scripts\playerUpdateState.gml</script>
+      <script>scripts\playerExitState.gml</script>
+    </scripts>
+    <scripts name="Engine">
+      <script>scripts\backgrounder.gml</script>
+      <script>scripts\warp.gml</script>
+      <script>scripts\shadowText.gml</script>
+      <script>scripts\guiSize.gml</script>
+      <script>scripts\setAligns.gml</script>
+    </scripts>
     <script>scripts\shoot.gml</script>
-    <script>scripts\SortListOfObjects.gml</script>
-    <script>scripts\shadowText.gml</script>
-    <script>scripts\setAligns.gml</script>
-    <script>scripts\guiSize.gml</script>
     <script>scripts\scoreLoad.gml</script>
+    <script>scripts\SortListOfObjects.gml</script>
     <script>scripts\enemyCheck.gml</script>
     <script>scripts\cheat.gml</script>
   </scripts>
