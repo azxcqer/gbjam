@@ -38,11 +38,14 @@
     <sprite>sprites\sHeart</sprite>
     <sprite>sprites\sSkull</sprite>
     <sprite>sprites\sToniolo</sprite>
+    <sprite>sprites\spBeach</sprite>
+    <sprite>sprites\spWave</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgTemp</background>
     <background>background\bgSeaFloor</background>
     <background>background\bgTitle</background>
+    <background>background\bgBeach</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -66,6 +69,7 @@
     <script>scripts\SortListOfObjects.gml</script>
     <script>scripts\enemyCheck.gml</script>
     <script>scripts\cheat.gml</script>
+    <script>scripts\jump.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ftGB</font>
@@ -126,6 +130,8 @@
     <objects name="Jumping">
       <object>objects\ctJumping</object>
     </objects>
+    <object>objects\oWaveMaker</object>
+    <object>objects\oBeach</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rSplash</room>

@@ -1,7 +1,8 @@
 switch global.playerState {
     
     case States.idle:
-        var movingOffset = 2;
+        var movingOffset = 2,
+            game = global.game;
         /*
         if keyboard_check(vk_right)
         || keyboard_check(ord("D"))
@@ -9,45 +10,56 @@ switch global.playerState {
         || keyboard_check(vk_space)
         {
         */
-            if canShoot
+        
+        if game = GameName.Inkatomb {
+                if canShoot
+                {
+                    canShoot = false;
+                    alarm[0] = room_speed / shotsPerSecond;
+                    image_xscale = 1;
+                    direction = 0;
+                    playerEnterState(States.shooting);
+                }
+            //}
+            if keyboard_check_pressed(vk_left)
             {
-                canShoot = false;
-                alarm[0] = room_speed / shotsPerSecond;
-                image_xscale = 1;
-                direction = 0;
+                /*
+                image_xscale = -1;
+                direction = 180;
                 playerEnterState(States.shooting);
+                */
             }
-        //}
-        if keyboard_check_pressed(vk_left)
-        {
-            /*
-            image_xscale = -1;
-            direction = 180;
-            playerEnterState(States.shooting);
-            */
+            if keyboard_check_pressed(vk_up)
+            || keyboard_check_pressed(ord("W"))
+            {
+                if global.currentLane > 0
+                {
+                    global.currentLane = global.currentLane - 1;
+                    x = global.lanes[| global.currentLane].x + (global.lanes[| global.currentLane].sprite_width/2);
+                    y = global.lanes[| global.currentLane].y + (global.lanes[| global.currentLane].sprite_height/2) - movingOffset;
+                }
+                    
+            }  
+            if keyboard_check_pressed(vk_down)
+            || keyboard_check_pressed(ord("S"))
+            {
+                if global.currentLane < (ds_list_size(global.lanes) - 1)
+                {
+                    global.currentLane = global.currentLane + 1;
+                    x = global.lanes[| global.currentLane].x + (global.lanes[| global.currentLane].sprite_width/2);
+                    y = global.lanes[| global.currentLane].y + (global.lanes[| global.currentLane].sprite_height/2) - movingOffset;
+                }
+            }
         }
-        if keyboard_check_pressed(vk_up)
-        || keyboard_check_pressed(ord("W"))
-        {
-            if global.currentLane > 0
-            {
-                global.currentLane = global.currentLane - 1;
-                x = global.lanes[| global.currentLane].x + (global.lanes[| global.currentLane].sprite_width/2);
-                y = global.lanes[| global.currentLane].y + (global.lanes[| global.currentLane].sprite_height/2) - movingOffset;
-            }
-                
-        }  
-        if keyboard_check_pressed(vk_down)
-        || keyboard_check_pressed(ord("S"))
-        {
-            if global.currentLane < (ds_list_size(global.lanes) - 1)
-            {
-                global.currentLane = global.currentLane + 1;
-                x = global.lanes[| global.currentLane].x + (global.lanes[| global.currentLane].sprite_width/2);
-                y = global.lanes[| global.currentLane].y + (global.lanes[| global.currentLane].sprite_height/2) - movingOffset;
-            }
-        }      
+        
+        else if game = GameName.Jumping
+        
         break; 
+        
+    case States.jumping:
+        jump()
+        
+        break;
     case States.shooting:
         shoot()
         

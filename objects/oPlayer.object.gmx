@@ -30,10 +30,15 @@
     idle,
     shooting,
     stun,
-    dead
+    dead,
+    jumping,
 }
 var playerState;
+
 global.playerState = States.idle;
+playerEnterState(States.idle)
+
+game = global.game
 </string>
           </argument>
         </arguments>
@@ -55,10 +60,18 @@ global.playerState = States.idle;
           <argument>
             <kind>1</kind>
             <string>///other vars
-shootInit()
-shootOffsetX = 2
-canShoot = true
-shotsPerSecond = 3
+switch game {
+    case GameName.Inkatomb :
+        shootInit()
+        shootOffsetX = 2
+        canShoot = true
+        shotsPerSecond = 3
+    break
+
+    case GameName.Jumping :
+        jumpInit()
+    break
+}
 </string>
           </argument>
         </arguments>

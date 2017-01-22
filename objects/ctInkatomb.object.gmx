@@ -40,64 +40,77 @@ var numberOfSpawners
 difficulty = GameDifficulty.normal
 room_speed = 60
 global.currentLane = 0;
+game = global.game
 //score reset
 score = 0
 global.gamestate = GameState.playing
 global.kills = 0
-//cheatInit()
-
-//enemy array
-global.enemiesObjects[0] = oCrab
-global.enemiesObjects[1] = oFish
-
 backgrounder()
-background_index[0] = bgSeaFloor
 
 switch difficulty
-{
-    case GameDifficulty.facerrimo:
-        numberOfSpawners = 3
-        break
-    case GameDifficulty.facil:
-        numberOfSpawners = 3
-        break
-    case GameDifficulty.normal:
-        numberOfSpawners = 6
-        break
-    case GameDifficulty.dificil:
-        numberOfSpawners = 6
-        break
-    case GameDifficulty.hell:
-        numberOfSpawners = 6
-        break
-}
-global.lanes = ds_list_create();
-SortListOfObjects(global.lanes, oLane)
-
-global.spawners = ds_list_create();
-SortListOfObjects(global.spawners, oSpawner)
-
-for (i = 0; i &lt; ds_list_size(global.spawners); i += 1)
-{
-    if i &gt;= numberOfSpawners
     {
-        instance_deactivate_object(global.spawners[| i]);
+        case GameDifficulty.facerrimo:
+            numberOfSpawners = 3
+            break
+        case GameDifficulty.facil:
+            numberOfSpawners = 3
+            break
+        case GameDifficulty.normal:
+            numberOfSpawners = 6
+            break
+        case GameDifficulty.dificil:
+            numberOfSpawners = 6
+            break
+        case GameDifficulty.hell:
+            numberOfSpawners = 6
+            break
     }
-}
-/*for (i = 0; i &lt; instance_number(oLane); i += 1)
-{
-    var instance = instance_find(oLane,i);
-    j = 0;
-    if i &gt; 0
-    {
-        while global.lanes[| j].y &lt; instance.y &amp;&amp; ds_list_size(global.lanes) &gt; j
+
+switch game {
+    case GameName.Inkatomb:
+        //cheatInit()
+        
+        //enemy array
+        global.enemiesObjects[0] = oCrab
+        global.enemiesObjects[1] = oFish
+        
+        
+        background_index[0] = bgSeaFloor
+        
+        global.lanes = ds_list_create();
+        SortListOfObjects(global.lanes, oLane)
+        
+        global.spawners = ds_list_create();
+        SortListOfObjects(global.spawners, oSpawner)
+        
+        for (i = 0; i &lt; ds_list_size(global.spawners); i += 1)
         {
-            j = j + 1;
+            if i &gt;= numberOfSpawners
+            {
+                instance_deactivate_object(global.spawners[| i]);
+            }
         }
-    }
-    ds_list_insert(global.lanes,j,instance);
+        /*for (i = 0; i &lt; instance_number(oLane); i += 1)
+        {
+            var instance = instance_find(oLane,i);
+            j = 0;
+            if i &gt; 0
+            {
+                while global.lanes[| j].y &lt; instance.y &amp;&amp; ds_list_size(global.lanes) &gt; j
+                {
+                    j = j + 1;
+                }
+            }
+            ds_list_insert(global.lanes,j,instance);
+        }
+          */ 
+    break
+    
+    case GameName.Jumping:
+        background_index[0] = bgBeach
+        
+    break
 }
-  */ 
 
    
    
@@ -209,11 +222,20 @@ if keyboard_check(vk_anykey){
             <kind>1</kind>
             <string>///ending game
 
-if !instance_exists(oCastle){
-    global.gamestate = GameState.ended
-    playerEnterState(States.dead);
-    scoreSave()
+switch game{
+    case GameName.Inkatomb:
+        if !instance_exists(oCastle){
+            global.gamestate = GameState.ended
+            playerEnterState(States.dead);
+            scoreSave()
+        }
+    break
+    
+    case GameName.Jumping:
+    
+    break
 }
+
 </string>
           </argument>
         </arguments>
