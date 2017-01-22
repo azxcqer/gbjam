@@ -103,25 +103,29 @@
     <objects name="Controllers">
       <object>objects\ctMenu</object>
       <object>objects\ctSplash</object>
-      <object>objects\ctInkatomb</object>
-      <object>objects\ctJumping</object>
     </objects>
     <object>objects\oPlayer</object>
-    <object>objects\oBullet</object>
-    <object>objects\oCastle</object>
-    <objects name="Enemies">
-      <object>objects\oCrab</object>
-      <object>objects\oFish</object>
-      <object>objects\oBullet_bad</object>
+    <objects name="Inkatomb">
+      <objects name="Enemies">
+        <object>objects\oCrab</object>
+        <object>objects\oFish</object>
+        <object>objects\oBullet_bad</object>
+      </objects>
+      <objects name="Engine and Others">
+        <object>objects\oLane</object>
+        <object>objects\oTestDot</object>
+        <object>objects\oFloor</object>
+        <object>objects\oSpawner</object>
+      </objects>
+      <object>objects\ctInkatomb</object>
+      <object>objects\oCastle</object>
+      <object>objects\oBullet</object>
+      <object>objects\oBlock</object>
+      <object>objects\oToniolo</object>
     </objects>
-    <object>objects\oSpawner</object>
-    <objects name="Engine and Others">
-      <object>objects\oLane</object>
-      <object>objects\oTestDot</object>
-      <object>objects\oFloor</object>
+    <objects name="Jumping">
+      <object>objects\ctJumping</object>
     </objects>
-    <object>objects\oBlock</object>
-    <object>objects\oToniolo</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rSplash</room>
