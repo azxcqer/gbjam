@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="oCastle" x="0" y="123" name="inst_677AE6C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ctMain" x="0" y="0" name="inst_DA4443BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ctInkatomb" x="0" y="0" name="inst_DA4443BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLane" x="16" y="73" name="inst_A60845CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer" x="20" y="43" name="inst_01CBF3C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLane" x="16" y="120" name="inst_23020C2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

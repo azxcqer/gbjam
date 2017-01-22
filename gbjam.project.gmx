@@ -103,7 +103,8 @@
     <objects name="Controllers">
       <object>objects\ctMenu</object>
       <object>objects\ctSplash</object>
-      <object>objects\ctMain</object>
+      <object>objects\ctInkatomb</object>
+      <object>objects\ctJumping</object>
     </objects>
     <object>objects\oPlayer</object>
     <object>objects\oBullet</object>
@@ -125,7 +126,8 @@
   <rooms name="rooms">
     <room>rooms\rSplash</room>
     <room>rooms\rMenu</room>
-    <room>rooms\rGame</room>
+    <room>rooms\rInkatomb</room>
+    <room>rooms\rJumping</room>
   </rooms>
   <constants number="4">
     <constant name="color1">$9bbc0f</constant>

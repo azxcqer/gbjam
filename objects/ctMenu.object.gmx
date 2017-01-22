@@ -51,7 +51,7 @@ spacePressed = false
           <argument>
             <kind>1</kind>
             <string>///controls
-
+quit()
 if !spacePressed{
     if keyboard_check_pressed(vk_space){
         spacePressed = true
@@ -81,7 +81,8 @@ if !spacePressed{
             <string>///go to game
 if spacePressed
 &amp;&amp; !audio_is_playing(sdExplosion){
-    warp(rGame)
+    warp(rJumping)
+    global.game = GameName.Jumping
 }
 </string>
           </argument>

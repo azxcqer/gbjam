@@ -137,9 +137,7 @@ if keyboard_check(vk_anykey){
     
     else {
     
-        if keyboard_check_pressed(vk_escape){
-            game_end()
-        }
+        quit()
         
         if keyboard_check_pressed(ord("R")){
             room_restart()
