@@ -59,6 +59,7 @@
       <script>scripts\shadowText.gml</script>
       <script>scripts\guiSize.gml</script>
       <script>scripts\setAligns.gml</script>
+      <script>scripts\quit.gml</script>
     </scripts>
     <script>scripts\shoot.gml</script>
     <script>scripts\scoreLoad.gml</script>
