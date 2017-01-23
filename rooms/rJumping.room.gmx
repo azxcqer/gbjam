@@ -54,6 +54,7 @@
     <instance objName="oPlayer" x="16" y="123" name="inst_01CBF3C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ctJumping" x="0" y="0" name="inst_BD92E54C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBeach" x="0" y="144" name="inst_8DCA178E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWaveMaker" x="192" y="72" name="inst_DCD345D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

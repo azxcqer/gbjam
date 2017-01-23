@@ -108,6 +108,7 @@ switch game {
     
     case GameName.Jumping:
         background_index[0] = bgBeach
+        global.enemiesObjects[0] = oWave
         
     break
 }
@@ -361,33 +362,36 @@ switch global.gamestate{
     
     
 }
-
-///castle health draw
-draw_set_halign(1)
-var scaling = 4
-if instance_exists(oCastle){
-    var i,
-        castleHP = oCastle.life,
-        hearts = castleHP,
-        extra = false,
-        spacing = sprite_get_width(sHeart),
-        ;
-    if hearts &gt; 6 {
-        hearts = 6
-        extra = true
+switch game {
+    case GameName.Inkatomb:
+    ///castle health draw
+    draw_set_halign(1)
+    var scaling = 4
+    if instance_exists(oCastle){
+        var i,
+            castleHP = oCastle.life,
+            hearts = castleHP,
+            extra = false,
+            spacing = sprite_get_width(sHeart),
+            ;
+        if hearts &gt; 6 {
+            hearts = 6
+            extra = true
+        }
+        for (i = 0; i &lt; hearts; i++){
+            draw_sprite_ext(sHeart, 0, 0  + (i * spacing * scaling), 0, scaling, scaling,0,c_white,1)
+        }
+        if extra{
+            draw_text((1 + hearts) * scaling * spacing, 0, "x" + string(castleHP) )
+        }
     }
-    for (i = 0; i &lt; hearts; i++){
-        draw_sprite_ext(sHeart, 0, 0  + (i * spacing * scaling), 0, scaling, scaling,0,c_white,1)
-    }
-    if extra{
-        draw_text((1 + hearts) * scaling * spacing, 0, "x" + string(castleHP) )
-    }
+    /*
+    var kills = string(global.kills)
+    draw_sprite_ext(sSkull, 0, 0, 8 * scaling, scaling, scaling, 0, c_white, 1)
+    draw_text(2 * scaling * 8 + 8, 8 * scaling + 4 , "x" + kills)
+    */
+    break
 }
-/*
-var kills = string(global.kills)
-draw_sprite_ext(sSkull, 0, 0, 8 * scaling, scaling, scaling, 0, c_white, 1)
-draw_text(2 * scaling * 8 + 8, 8 * scaling + 4 , "x" + kills)
-*/
 </string>
           </argument>
         </arguments>

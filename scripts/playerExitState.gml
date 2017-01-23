@@ -14,5 +14,8 @@ switch global.playerState {
     case States.dead:
         
         break;
+    default:
+    
+        break;
 
 }

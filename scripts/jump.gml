@@ -1,8 +1,7 @@
 #define jump
 
-
 #define jumpInit
-jumping = false
-jumpSpeed = 2
+canJump = true
+jumpSpeed = 0.8
 jumpStart = y
-jumpMax = sprite_get_height(sprite_index) * 8
+jumpMax = y - (sprite_get_height(sprite_index) * 7)

@@ -37,6 +37,8 @@ enum GameDifficulty {facerrimo, facil, normal, dificil, hell}
 enum GameState {menu, playing, ended, paused };
 enum GameName { Inkatomb, Jumping };
 
+global.test = true
+
 //globals
 global.gamestate = GameState.menu
 global.sound = true
@@ -64,7 +66,14 @@ global.game = GameName.Inkatomb
           <argument>
             <kind>1</kind>
             <string>///go to menu
-warp(rMenu)
+if global.test {
+    global.game = GameName.Jumping
+    warp(rJumping)
+    }
+    else {
+        warp(rMenu)
+}
+
 </string>
           </argument>
         </arguments>
