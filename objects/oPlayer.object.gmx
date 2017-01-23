@@ -68,7 +68,6 @@
     jumping,
     falling,
 }
-var playerState;
 
 global.playerState = States.idle;
 playerEnterState(States.idle)

@@ -55,6 +55,9 @@
       <script>scripts\playerEnterState.gml</script>
       <script>scripts\playerUpdateState.gml</script>
       <script>scripts\playerExitState.gml</script>
+      <scripts name="States">
+        <script>scripts\InkatombIdle.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Engine">
       <script>scripts\backgrounder.gml</script>

@@ -17,5 +17,4 @@ switch global.playerState {
         sprite_index = sPlayer;
         image_speed = 0
         image_index = 0
-
 }
