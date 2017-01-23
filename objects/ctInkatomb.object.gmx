@@ -233,7 +233,10 @@ switch game{
     break
     
     case GameName.Jumping:
-    
+        if !instance_exists(oPlayer){
+            global.gamestate = GameState.ended
+            scoreSave()        
+        }
     break
 }
 
