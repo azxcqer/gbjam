@@ -18,17 +18,14 @@ switch global.playerState {
             break
         
             case GameName.Jumping:
-                if !keyboard_check(vk_space){
+                if keyboard_check(vk_space){
                     if canJump{
                         playerEnterState(States.jumping)
                     }                    
                 }
             break
-    
-        break
-
         }
-        
+    break   
     case States.jumping:
         vspeed = -jumpSpeed
         if keyboard_check(vk_space)
